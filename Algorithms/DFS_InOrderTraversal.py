@@ -6,6 +6,19 @@ class Node:
         self.left = None
         self.right = None
 
+n1 = Node(1)
+n1.left = Node(2)
+n1.right = Node(3)
+n1.left.left = Node(4)
+n1.left.right = Node(5)
+
+#       1
+#      /\
+#     2  3
+#    /\   \ 
+#   4  5   6 
+
+# Recursive Way
 def inorderTraversal(root):
     res = []
     def dfs(root):
@@ -17,11 +30,6 @@ def inorderTraversal(root):
     dfs(root)
     return res    
 
-n1 = Node(1)
-n1.left = Node(2)
-n1.right = Node(3)
-n1.left.left = Node(4)
-n1.left.right = Node(5)
 
 print(inorderTraversal(n1))
 

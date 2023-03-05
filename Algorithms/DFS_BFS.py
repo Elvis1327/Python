@@ -11,6 +11,14 @@ root.left.left = Node(4)
 root.left.right = Node(5)
 root.right.right = Node(6)
 
+#       1
+#      /\
+#     2  3
+#    /\   \ 
+#   4  5   6 
+
+# DFS Implementation!
+# Iterative Way
 def dfsImplementation(root):
     res = []
     stack = []
@@ -25,22 +33,16 @@ def dfsImplementation(root):
 
     return res
 
-
-    #              1
-    #             /\
-    #            2  3
-    #           /\   \ 
-    #          4  5   6 
-
 # Recursive
-# Still is bad solution
 def dfsRecursive(root):
-    res = []
-    if root == None:
-        return []
-
-    dfsRecursive(root.left)
-    res.append(root.value)
-    dfsImplementation(root.right)
-    return res
+    tree = []
+    def dfsRecursiveHelper(vector):
+        if vector == None:
+            return tree
+        dfsRecursiveHelper(vector.left)
+        tree.append(vector.value)
+        dfsRecursiveHelper(vector.right)
+    dfsRecursiveHelper(root)
+    print(tree)
+    return tree
 

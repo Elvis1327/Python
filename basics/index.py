@@ -1,37 +1,18 @@
-# With the letter dir we can see al the methods of a value example
 
-# print(dir([1,2,3]))
-# this will print all the methods for arrays
+input = [1,1,1,1,1,2,2,2,2,3,3,5,]
 
-# print(dir('sdaf'))
-# And this will print al the methods for strings
+def conuntUniqueValues(input):
+    l = 0
+    r = len(input) - 1
+    result = 0
+    while l < r:
+        if input[l] != input[r]:
+            result = result + 1
+        l = l + 1
+        r = r -1
+    print(result)
 
-
-def sortedSquaredArray(array):
-    solution = [0 for _ in array]
-    for idx in range(len(array)):
-        print(idx)
-
-sortedSquaredArray([1,2,3,5,6,8,9]) 
-
-
+conuntUniqueValues(input)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+         

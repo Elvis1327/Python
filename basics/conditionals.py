@@ -22,7 +22,7 @@ else:
     print('The name no Cumplio')
 
 
-#  Login Operators && || but here and, or, not
+#  Logic Operators && || but here: and, or, not
 if x < 60 and x > 30:
     print('Esta estabilizado')
 else:
