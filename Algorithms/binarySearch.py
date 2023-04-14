@@ -15,6 +15,8 @@ def binarySearch(arr, target):
     
 print(binarySearch([3,6,9,14,17,40,72], 9))
 
+# //////////////////////////////////
+
 # Recursive
 def binarySearchRecursive(nums, target):
     return helper(nums, target, 0, len(nums) - 1)
