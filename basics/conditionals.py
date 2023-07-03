@@ -19,7 +19,7 @@ if name == 'Elvis':
     else:
         print('idk')
 else:
-    print('The name no Cumplio')
+    print('The name is Wrong')
 
 
 #  Logic Operators && || but here: and, or, not
