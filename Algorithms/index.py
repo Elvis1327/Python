@@ -12,3 +12,17 @@ def test(n):
 
 print(test(5))
 
+string = "ab"
+res = []
+res.append(string[0:2])
+
+
+test = ""
+res2 = test + string
+
+
+res = True and True
+print(res)
+
+
+
